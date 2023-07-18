@@ -1,0 +1,14 @@
+{
+  "servers":[
+    {
+      "server_name":"SG1",
+      "server_image_url":"SG1",
+      "server_ip":"SG1",
+      "server_speed":"200",
+      "server_proto":"udp",
+      "server_username":"SG1",
+      "server_pass":"SG1",
+      "server_config":"SG1",
+    }
+  ]
+}
