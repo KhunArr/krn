@@ -2,7 +2,7 @@
   "servers":[
     {
       "server_name":"SG1",
-      "server_image_url":"SG1",
+      "server_image_url":"https://github.com/KhunArr/krn/blob/main/sg_filg.png?raw=true",
       "server_ip":"SG1",
       "server_speed":"200",
       "server_proto":"udp",
