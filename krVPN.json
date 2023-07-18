@@ -6,8 +6,8 @@
       "server_ip":"SG1",
       "server_speed":"200",
       "server_proto":"udp",
-      "server_username":"SG1",
-      "server_pass":"SG1",
+      "server_username":"demo",
+      "server_pass":"demo",
       "server_config":"SG1",
     }
   ]
