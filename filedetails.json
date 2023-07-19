@@ -1,5 +1,111 @@
 {
   "ovpn_file":[
-    {"id":0,"file":"client dev tun proto udp ... d4ec4105a39c814bd980c9c0e0b8efb4 -----END OpenVPN Static key V1----- </tls-auth>"},
+    {"id":0,"file":"dev tun
+proto tcp
+port 443
+remote KhunArr 520 udp
+remote 157.245.193.212:33627@app.dtac.co.th
+resolv-retry infinite
+persist-key
+persist-tun
+remote-cert-tls server
+cipher AES-256-CBC
+comp-lzo
+setenv opt block-outside-dns
+mute 2
+mute-replay-warnings
+<auth-user-pass>
+eutvpn-111111
+222222
+</auth-user-pass>
+auth-nocache
+verb 3
+redirect-gateway def1
+script-security 2
+route 0.0.0.0 0.0.0.0
+route-method exe
+route-delay 2
+dhcp-option DNS 8.8.8.8
+dhcp-option DNS 8.8.4.4 
+nobind
+http-proxy-option CUSTOM-HEADER CONNECT HTTP/1.0
+http-proxy-option CUSTOM-HEADER Host www.opensignal.com
+http-proxy-option CUSTOM-HEADER X-Online-Host www.opensignal.com
+http-proxy-option CUSTOM-HEADER X-Forward-Host www.opensignal.com
+http-proxy-option CUSTOM-HEADER Connection:Keep-Alive
+http-proxy 157.245.193.212 8080
+<ca>
+-----BEGIN CERTIFICATE-----
+MIIDKzCCAhOgAwIBAgIJAOBQANwsTes3MA0GCSqGSIb3DQEBCwUAMBMxETAPBgNV
+BAMMCENoYW5nZU1lMB4XDTIwMDEyMDE1MDQyMFoXDTMwMDExNzE1MDQyMFowEzER
+MA8GA1UEAwwIQ2hhbmdlTWUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQDELv5k4ncX+JaDydC3e+S0nUMlAba4//pXwu7aifnAjhm2RmB9LVakyE4MXulw
+xK+8avZmYC7bj6w6BT7twCaGTptWm6Di+HMj7OC3gKI5xUZHH7ATCrLGi6bXIK2A
+iAAn0psp24mvcO8B+II6cSevObSJP7+bPbSueVmPAyJpXIhn22uZdVl0wxdpKjXW
+VfnmkSuVXHQMPHivZV251sM/+sxUshD/eQXovwXhXwz64wLAovAqNJh7te0DTMgg
+76DOcx2dSIw5e6XoCvpHzJHeDAR6AbHbcvRqYeYs59Al1e1eMEM9TlIEsIPcgC51
+iH8hzczdtow4AuugQ9BlLOprAgMBAAGjgYEwfzAdBgNVHQ4EFgQUOrhRzg3U1Rsd
+FNsXJmIzC77oAX0wQwYDVR0jBDwwOoAUOrhRzg3U1RsdFNsXJmIzC77oAX2hF6QV
+MBMxETAPBgNVBAMMCENoYW5nZU1lggkA4FAA3CxN6zcwDAYDVR0TBAUwAwEB/zAL
+BgNVHQ8EBAMCAQYwDQYJKoZIhvcNAQELBQADggEBAJPSKVLQBHYmQgmS/Jrl5wiI
+NBGjHX1daI9fkkjRre1/C+OG2ro9BfczbHTKHKganZdvIXyS5PzZmnY8linRgnyf
+SLAPp99ZpXgNREXvG6WfwxDdlPn+cDiHx1ufF6ASn3msrBWgmn068GawuCgFWJWh
+lGFC/XTYEJkb2BK/k2y9nySb/zUWnK3MZwhQemb3lEDFLBwY6Pvvw53on8KR/QUH
+F9u580socowhTTF1BcXnp95A0jjshGiyibyLGOiZCPDzztP5k8gSq/fdkMhNMpJW
+Gi7b7yUeC1GFaVinOSGKkTyZwkJJzFfTok/xeXtEPZpL3K9N3SCL5qMZ5CwKNTY=
+-----END CERTIFICATE-----
+</ca>
+<cert>
+-----BEGIN CERTIFICATE-----
+MIIDSjCCAjKgAwIBAgIQMk8G7szqOHgiV9roFeM24TANBgkqhkiG9w0BAQsFADAT
+MREwDwYDVQQDDAhDaGFuZ2VNZTAeFw0yMzA3MTUwMDMyMTRaFw0yNTEwMTcwMDMy
+MTRaMBgxFjAUBgNVBAMMDWV1dHZwbi1naGprbHAwggEiMA0GCSqGSIb3DQEBAQUA
+A4IBDwAwggEKAoIBAQCt4bjYGFT9DiaFEZLH7st6dc04TZrKIzZhVvu2JzDF9NZn
+u1TXRDKnVYZ+TcfQxB7p1pDuB3qzjnVjfH6B09GiBYyC/EKNsiYxe0FhtDBDUsai
+Hd7kUBeMybkVD1fl6ABKCYp9VuAELKE0cnuTHD7acwb0jB3YOB3862z7KXfEEAoP
+HvPIh4qieGKoGaGrvLxJcLaJbfaWnaaqs+Vpvfp2ytxkRSnFwd0Vzs7qRwtbnnht
+rbxcJ1bQFzUYINkRcU0GAb7IKBy2kgvc2OipMIdtiv5MULGisT2h6YwRs4FhF4l6
+M8AeVHD4aBwlRizSV7D6UOfxMYi8rTxf8RcOfU4ZAgMBAAGjgZQwgZEwCQYDVR0T
+BAIwADAdBgNVHQ4EFgQUpJH5uSwQEMKxKyWoiiJpz5kcCxMwQwYDVR0jBDwwOoAU
+OrhRzg3U1RsdFNsXJmIzC77oAX2hF6QVMBMxETAPBgNVBAMMCENoYW5nZU1lggkA
+4FAA3CxN6zcwEwYDVR0lBAwwCgYIKwYBBQUHAwIwCwYDVR0PBAQDAgeAMA0GCSqG
+SIb3DQEBCwUAA4IBAQB1N1qxw1vKryzvj2AeRzDnNfZkHdxAd9uFZqDNBXvYFfUY
+HwjsBd6VFFjRpFI87XCTl6BR6ZgiljqH9K+czExyAYNtRJMWB+p1pLUw7p6YKQ5d
+8c0dSLvW0GKLiNdFh3ie/XvZMTmmSf6xdLbGtg8OxHKscLenJJv7Ys4nUPQ9ds7X
+7KKNBjKtyV42SpXOW1U0Ro6a8L5ZgUazC8yt+A5BNidDAB4lLyyQhBs2iaHm9NRG
+YFNL8+ceE5IQksz2NLB1QUTUKX9wDssJdblvxxXcIraswfvCTO7dbzGaPafBJ3Ax
+qJNGGkU+oNmK9VN5hr4EbDAyZsU9KLq5cGIuhN1G
+-----END CERTIFICATE-----
+</cert>
+<key>
+-----BEGIN PRIVATE KEY-----
+MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCt4bjYGFT9DiaF
+EZLH7st6dc04TZrKIzZhVvu2JzDF9NZnu1TXRDKnVYZ+TcfQxB7p1pDuB3qzjnVj
+fH6B09GiBYyC/EKNsiYxe0FhtDBDUsaiHd7kUBeMybkVD1fl6ABKCYp9VuAELKE0
+cnuTHD7acwb0jB3YOB3862z7KXfEEAoPHvPIh4qieGKoGaGrvLxJcLaJbfaWnaaq
+s+Vpvfp2ytxkRSnFwd0Vzs7qRwtbnnhtrbxcJ1bQFzUYINkRcU0GAb7IKBy2kgvc
+2OipMIdtiv5MULGisT2h6YwRs4FhF4l6M8AeVHD4aBwlRizSV7D6UOfxMYi8rTxf
+8RcOfU4ZAgMBAAECggEBAJUfSVRigbjIwvZKXPSEchNjJg4MWBzVWBTg8VyFfcm3
+sY0i1p8LSNnDemWltSDwoYZv0rmgxnVpTnl00lXrYBSw55GKYFV/HExBZZAyZVXH
+jryIG5j4q0m90rIiB4MPlffo+NGHiPVrhREiwaInjivwjF18MTg24FkBWuSH6sPE
+huOa6ZiQQYq3f6XsD9+Aj4Ou2E0LE5Tco54rM9fQbU4WpveDiUMtnilCTQk85EKN
+GIk/DiwTOJTLK3hWH5QR6MWrplfbpM6pPtFjp1+Sv7N3Vr6J7OaKOsHapwOknz6Q
+FctCxG3/GmNc1aTB4J+e+aeqa4KmOKzi4bOIiLYmjNECgYEA4l1oqGVxFyRNbgz+
+VtGTmc8Yixo790g4iH/IVCTNRpjAa5xMxqRpJp1Yx9E7u4lxNyEBhS5yBoPfnOwJ
+tQ9jOrRytu5UWGnQ5x0sTuWqByawmH1iL1yzSj+Ry2eZ7/nu1EZ/5PpWIx2z2ADt
+qQ6qmOM4qCbU8dt2xIzKSPGM1uUCgYEAxKVYyfv7fba+Ajas8ygsLDEs2XaDWM/f
+O7JvH1T/w79XiLmHhqZIO2ymAZReerc2BJ1tAwj9lw9xt2k2ZnvZ+G5oF42ppDJP
+L5q4Jw9ys0ep5vooZdcrbuLNoC24ZI5WZ2/i9B61GlesBaS7mgaWWwKjlA2ZpiDp
+vGm4urA+UyUCgYEAyc91SwyFcphO39p9tnFKIkpcG0fcRm4A2NDzjPDyggoVIttK
+J57UkDSfviVwF5ZFdVzbuhzaU6ymY4SccuuxD9lonGaGk/xi3mlH418l4xI/RvQh
+4Q/IWF2sYaePuj8dCeuAgmgc+1mzyNOrDpmgxoVtMZzNJIMAs+LBRZ70bXECgYAU
+YfMfFJBPyoZNYm9w0MQrXHmCnOcmaH2CCY+9FqlgF9Ax6tEiYs/v4OYgGcnlPGJL
+/ilTfDYU11P5J92sp7/DIWaGsndX/qL4kzftTIueC5qPx3QygigNWVLo/HQ1cA+C
+rzU+CoTJEzdQam/Lmk0xZ8eey/4WGyk/D1JHf4cmRQKBgQDIBM+s3ozOOB3CI0mu
+BMAwvj2jp1r9jNqCY7DrSn+3wS71bKLpu62lbM0DLIAvoFACU+k6/xIorQyQ5Rme
+M9kf+ija+0Sur5T3c+ccav25ZFSzqtjRjWr74Q/tdPyz2IQ9yw96wqVbCgeMlMfa
+l3SlBTrxRtVb8XUfl/HnNrb7QQ==
+-----END PRIVATE KEY-----
+</key>"},
     {"id":1,"file":""}]
 }
