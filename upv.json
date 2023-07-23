@@ -2,5 +2,9 @@
 "Version":"3",
 "Url":"link",
 "Changelog":"hi",
-
+  
+"latestVersion": "1.0.0",
+  "latestVersionCode": "1",
+  "url":"link",
+  "releaseNotes": ["-Demo"]
 }
